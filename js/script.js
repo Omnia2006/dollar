@@ -13,16 +13,9 @@ function updateValue(action) {
 
 function validate() {
     var value = document.getElementById("demo").value;
-    var currency = document.getElementById("currency").value;
     var result = document.getElementById("Amount");
 
 
-  var exchangeRates = {
-        "EGP": 49.5,
-        "EUR": 0.92,
-        "GBP": 0.82,
-        "INR": 82
-    };
 
 
     if (value == "") {
@@ -36,8 +29,8 @@ function validate() {
     }
 
 
-    var convertedAmount = value * exchangeRates[currency];
-    result.innerHTML = convertedAmount + ' ' + currency;
+    var convertedAmount = value * 49.5
+    result.innerHTML = convertedAmount 
     result.style.color = "green";
     return false;
 }

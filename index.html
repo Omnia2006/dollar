@@ -22,20 +22,14 @@
 
                 <form onsubmit="return validate();">
                     <input type="number" id="demo" class="form-control my-4" placeholder="Enter Amount in Dollars" step="0.01">
-                    <!-- Currency dropdown -->
-                    <select id="currency" class="form-control mb-4">
-                    <option value="EGP">Egyptian Pound (EGP)</option>
-                    <option value="EUR">Euro (EUR)</option>
-                    <option value="GBP">British Pound (GBP)</option>
-                    <option value="INR">Indian Rupee (INR)</option>
-                </select>
+                    
 
                 <input type="submit" class="btn btn-primary btn-block" onclick="validate();">
 
             </form>
 
                 <div class="text-center">
-                    <button class="btn btn-warning m-3" onclick="updateValue('increase')">Increase</button>
+                    <button class="btn btn-sucsses m-3" onclick="updateValue('increase')">Increase</button>
                     <button class="btn btn-danger m-3" onclick="updateValue('decrease')">Decrease</button>
                 </div>
 
